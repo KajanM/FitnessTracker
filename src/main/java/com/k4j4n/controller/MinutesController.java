@@ -1,6 +1,8 @@
 package com.k4j4n.controller;
 
+import com.k4j4n.model.Exercise;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -11,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MinutesController {
 
     @RequestMapping(value = "/addMinutes")
-    public String addMinutes() {
+    public String addMinutes(@ModelAttribute ("exercise")Exercise exercise) {
+
+        System.out.println("exercise : " + exercise.getMinutes());
 
         return "addMinutes";
     }
