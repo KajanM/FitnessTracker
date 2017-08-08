@@ -7,6 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="sprig" uri="http://www.springframework.org/tags" %>
 <html>
 <head>
     <title>Add Minutes Page</title>
@@ -16,7 +18,7 @@
 <form:form commandName="exercise">
     <table>
         <tr>
-            <td>Minutes Exercise For Today</td>
+            <td><sprig:message code="goal.text"/> </td>
             <td><form:input path="minutes"/></td>
         </tr>
         <tr>
