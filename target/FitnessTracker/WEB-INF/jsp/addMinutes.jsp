@@ -14,6 +14,9 @@
 </head>
 <body>
 <h1>Add Minutes Exercised</h1>
+
+<a href="?language=en">English</a> | <a href="?language=fr">French</a>
+
 <form:form commandName="exercise">
     <table>
         <tr>
